@@ -1,0 +1,21 @@
+<html>
+    {%load static%}
+    <head>
+        <title>DB MODEL LEARNING</title>
+    </head>
+    <body>
+        {% if emp_list%}
+        <table>
+            {% for Employee in emp_list %}
+            <tr>
+                <td>{{Employee.empno}}</td>
+                <td>{{Employee.empname}}</td>
+                <td>{{Employee.empsalary}}</td>
+                <td>{{Employee.empaddress}}</td>
+            </tr>
+            {%endfor%}
+            {%endif%}
+            
+        </table>
+    </body>
+</html>
